@@ -1,0 +1,789 @@
+fileFormatVersion: 2
+guid: 26bdac9df65be3647aea1ad55964b750
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_0"
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1711
+        width: 475
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7f3758f848caa4ebc05efa5f512235
+      internalID: 1454257959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_1"
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1226
+        width: 1187
+        height: 729
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70cbae62ffeb7488cf49c66614224d
+      internalID: -745884446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_2"
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1442
+        width: 597
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67802e1128e60a34298c0ac03eedf3ba
+      internalID: -240357723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_3"
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1271
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacfe2bdca46e514ea33811616eef8d7
+      internalID: 704019732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_4"
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 924
+        width: 71
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d073351b1c6ba854d87f477483b644b4
+      internalID: -367734471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_5"
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 948
+        width: 134
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310536e1b9db575498383f15fb788beb
+      internalID: -2054071090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_6"
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 943
+        width: 744
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8ecf4d387dee741bc3bc50f35bbef3
+      internalID: -1655494703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_7"
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 767
+        width: 49
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934dbdeae3083d54bbb0c3b342bf4caf
+      internalID: 383660912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_8"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 806
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be839c1f0a745ae4fb0d9268920000af
+      internalID: -978584667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_9"
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 797
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703d536ce8cd2e24c887187bbfea825e
+      internalID: -1838552382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_10"
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 797
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27dcbca7692be24485ac434b412b8be
+      internalID: -894915743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_11"
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 797
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155758948fbc66e4481bcb270a1bfc05
+      internalID: 342402241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_12"
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 797
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c0cb1bcf4889441bf5c16bca8a1db3
+      internalID: -2145316039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_13"
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 838
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504611e12cac06498d65b518ae36c0d
+      internalID: -988224689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_14"
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 797
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618d58819af3be549a6e20a85fe6767f
+      internalID: 122226447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_15"
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 797
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1602109e3ab6c0b41a6fcc766a299038
+      internalID: 695734733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_16"
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 797
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4714ab4eafc32f14daf6fe086c838ec2
+      internalID: -86922391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_17"
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 831
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b229a251e585bba4898b5b881c5c84c4
+      internalID: -1807916128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_18"
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 797
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e06a4385df4e04fa6b0b875bbf08e2
+      internalID: -11919483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_19"
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 797
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66444ec0b3ddd5f4594cae4592f30d45
+      internalID: 1597013533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_20"
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 833
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31bc68f67216b94cace082f42156966
+      internalID: 1937880935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_21"
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 819
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ffe4355c90c1341b1d8bc150d93f65
+      internalID: -1710403747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_22"
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 797
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c492a58e72459499cfa91115c1d560
+      internalID: 1244177126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_23"
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 808
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfe917c230888441814aaea2a2321b8
+      internalID: -1836950210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_24"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 624
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bf0734546b61540b277dfba2046567
+      internalID: -1843080120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_25"
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 608
+        width: 121
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455acc182317ce8409789d7f57d6dc3e
+      internalID: -1790752541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_26"
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 466
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c837fd452125a4a806b38eeee176a8
+      internalID: -731335134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Vectorizacion_Botones de men\xFA_27"
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 456
+        width: 75
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54518127a7ae09d4cafa74386157b126
+      internalID: -1983905439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9030691556f159e44a731eb9194c310f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "Vectorizacion_Botones de men\xFA_0": 1454257959
+      "Vectorizacion_Botones de men\xFA_1": -745884446
+      "Vectorizacion_Botones de men\xFA_10": -894915743
+      "Vectorizacion_Botones de men\xFA_11": 342402241
+      "Vectorizacion_Botones de men\xFA_12": -2145316039
+      "Vectorizacion_Botones de men\xFA_13": -988224689
+      "Vectorizacion_Botones de men\xFA_14": 122226447
+      "Vectorizacion_Botones de men\xFA_15": 695734733
+      "Vectorizacion_Botones de men\xFA_16": -86922391
+      "Vectorizacion_Botones de men\xFA_17": -1807916128
+      "Vectorizacion_Botones de men\xFA_18": -11919483
+      "Vectorizacion_Botones de men\xFA_19": 1597013533
+      "Vectorizacion_Botones de men\xFA_2": -240357723
+      "Vectorizacion_Botones de men\xFA_20": 1937880935
+      "Vectorizacion_Botones de men\xFA_21": -1710403747
+      "Vectorizacion_Botones de men\xFA_22": 1244177126
+      "Vectorizacion_Botones de men\xFA_23": -1836950210
+      "Vectorizacion_Botones de men\xFA_24": -1843080120
+      "Vectorizacion_Botones de men\xFA_25": -1790752541
+      "Vectorizacion_Botones de men\xFA_26": -731335134
+      "Vectorizacion_Botones de men\xFA_27": -1983905439
+      "Vectorizacion_Botones de men\xFA_3": 704019732
+      "Vectorizacion_Botones de men\xFA_4": -367734471
+      "Vectorizacion_Botones de men\xFA_5": -2054071090
+      "Vectorizacion_Botones de men\xFA_6": -1655494703
+      "Vectorizacion_Botones de men\xFA_7": 383660912
+      "Vectorizacion_Botones de men\xFA_8": -978584667
+      "Vectorizacion_Botones de men\xFA_9": -1838552382
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
