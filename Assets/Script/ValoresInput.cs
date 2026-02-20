@@ -19,6 +19,8 @@ public class ValoresInput : MonoBehaviour
     [Header("InputField")]
     public TMP_InputField IdentificadorTexto;
     public TMP_Text textoEscrito;
-    public void LeerField(string InputField)
-    { IdentificadorTexto.text = InputField; }
+    public void LeerField()
+    {    string texto = IdentificadorTexto.text;
+     IdentificadorTexto.text = texto; }
+    // el primero identifica el marco, el segundo el texto que tu vas a escribir, (recuerda en el inspector en + añadir LeerField que es el nombre) entender porque no se escribe string en el parentesis **
 }
