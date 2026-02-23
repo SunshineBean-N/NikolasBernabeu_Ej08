@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class Paneles : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject panel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void TogglePanel() {  panel.SetActive(!panel.activeSelf); }
+
+    public void OpenPanel() { panel.SetActive(true); }
+    public void ClosePanel() { panel.SetActive(false); }
 }
