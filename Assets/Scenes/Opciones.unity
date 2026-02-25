@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &89121097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5200144028372899440, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+  m_PrefabInstance: {fileID: 102062749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
 --- !u!1001 &102062749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,7 +244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 468828459288988996, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -140
+      value: -212
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085323863628305734, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: m_Group
+      value: 
+      objectReference: {fileID: 89121097}
+    - target: {fileID: 1085323863628305734, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: toggleTransition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1158772118639172948, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_IsActive
@@ -253,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159116822501635752, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -270
+      value: -414
       objectReference: {fileID: 0}
     - target: {fileID: 1199279522724217415, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_Name
@@ -289,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1371922753698224971, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400
+      value: -616
       objectReference: {fileID: 0}
     - target: {fileID: 1717864551571595926, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -442,6 +461,26 @@ PrefabInstance:
     - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_IsOn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: m_Group
+      value: 
+      objectReference: {fileID: 89121097}
+    - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: toggleTransition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161362095518505591, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4368429788699771966, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -645,7 +684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7481779404269183343, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -530
+      value: -818
       objectReference: {fileID: 0}
     - target: {fileID: 7782143664817414885, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -682,6 +721,14 @@ PrefabInstance:
     - target: {fileID: 8065870288727972972, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_IsOn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065870288727972972, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: m_Group
+      value: 
+      objectReference: {fileID: 89121097}
+    - target: {fileID: 8065870288727972972, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
+      propertyPath: toggleTransition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8150353959718360656, guid: 8b977194b0e6f2f40a0ff4ff764119b0, type: 3}
       propertyPath: m_Name
@@ -1197,6 +1244,10 @@ MonoBehaviour:
   TextoValorToggle: {fileID: 0}
   IdentificadorTexto: {fileID: 0}
   textoEscrito: {fileID: 0}
+  miSlider: {fileID: 0}
+  textoValorSlider: {fileID: 0}
+  miDropdown: {fileID: 0}
+  textoValorDropdown: {fileID: 0}
 --- !u!1 &2033781832
 GameObject:
   m_ObjectHideFlags: 0
