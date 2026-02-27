@@ -27,7 +27,7 @@ public class JestorMenu : MonoBehaviour
                 TutorialEntrada.Play("EntraTutorial");
                 break;
         case 5:
-                SalirlEntrada.Play("EntraSalir");
+                SalirlEntrada.Play("EntraConfirmacion");
                 break;
         }
     }
@@ -49,7 +49,7 @@ public class JestorMenu : MonoBehaviour
                 TutorialEntrada.Play("SalirTutorial");
                 break;
             case 5:
-                SalirlEntrada.Play("SalirSalir");
+                SalirlEntrada.Play("SaleConfirmacion");
                 break;
         }
     }
