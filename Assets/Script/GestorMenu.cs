@@ -1,17 +1,12 @@
 using UnityEngine;
 
-public class JestorMEnu : MonoBehaviour
+public class JestorMenu : MonoBehaviour
 {
-    public bool controlPanel;
-    public string nombreAnimacion;
-    public Animator animator;
-    //No se usa, primer codigo de animacion
-
-
     public Animator LogrosEntrada;
     public Animator CreditosEntrada;
     public Animator RecordsEntrada;
     public Animator TutorialEntrada;
+    public Animator SalirlEntrada;
 
     public int AnimacionSwitch;
     //Apunta al "numero" de el menu
@@ -20,10 +15,19 @@ public class JestorMEnu : MonoBehaviour
     {
         switch (AnimacionSwitch)
         { case 1:
-                LogrosEntrada.Play("PanelLogrosEntrada");
+                LogrosEntrada.Play("EntraLogros");
                 break;
         case 2:
-                CreditosEntrada.Play("PanelMuestra");
+                CreditosEntrada.Play("EntraCreditos");
+                break;
+        case 3:
+                RecordsEntrada.Play("EntraRecords");
+                break;
+        case 4:
+                TutorialEntrada.Play("EntraTutorial");
+                break;
+        case 5:
+                SalirlEntrada.Play("EntraSalir");
                 break;
         }
     }
@@ -33,10 +37,19 @@ public class JestorMEnu : MonoBehaviour
         switch (AnimacionSwitch)
         {
             case 1:
-                LogrosEntrada.Play("PanelLogrosSalida");
+                LogrosEntrada.Play("SalirLogros");
                 break;
             case 2:
-                CreditosEntrada.Play("PanelMuestraSalida");
+                CreditosEntrada.Play("SalirCreditos");
+                break;
+            case 3:
+                RecordsEntrada.Play("SalirRecords");
+                break;
+            case 4:
+                TutorialEntrada.Play("SalirTutorial");
+                break;
+            case 5:
+                SalirlEntrada.Play("SalirSalir");
                 break;
         }
     }
@@ -54,14 +67,22 @@ public class JestorMEnu : MonoBehaviour
         AnimacionSwitch = 2;
         EntraMenus();
     }
-
-    public void ControlAnimacion()
+    public void RecordsAnimacion()
     {
-        if (controlPanel) { nombreAnimacion = "nombrequecorresponda"; }
-        else { nombreAnimacion = "laotraanimacion"; }
-        animator.Play(nombreAnimacion);
-        controlPanel = !controlPanel;
+        SalidaMenus();
+        AnimacionSwitch = 3;
+        EntraMenus();
     }
-    //No se usa, primer codigo de animacion
-
+    public void TutorialAnimacion()
+    {
+        SalidaMenus();
+        AnimacionSwitch = 4;
+        EntraMenus();
+    }
+    public void SalirAnimacion()
+    {
+        SalidaMenus();
+        AnimacionSwitch = 5;
+        EntraMenus();
+    }
 }
