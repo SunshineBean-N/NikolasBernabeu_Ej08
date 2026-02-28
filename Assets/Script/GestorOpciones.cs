@@ -27,6 +27,15 @@ public class GestorOpciones : MonoBehaviour
             case 3:
                 AudioEntrada.Play("EntraAudio");
                 break;
+            case 4:
+                AnimacionEsp.Play("EspDesplegar");
+                break;
+            case 5:
+                AnimacionGal.Play("GalDesplegar");
+                break;
+            case 6:
+                AnimacionIng.Play("IngDesplegar");
+                break;
         }
     }
 
@@ -50,37 +59,6 @@ public class GestorOpciones : MonoBehaviour
                 AnimacionGal.Play("GalSeleccionado");
                 break;
             case 6:
-                AnimacionIng.Play("IngSeleccionado");
-                break;
-        }
-    }
-
-    public void DespliegaIdioma()
-    {
-        switch (AnimacionSwitch)
-        {
-            case 1:
-                AnimacionEsp.Play("EspDesplegar");
-                break;
-            case 2:
-                AnimacionGal.Play("GalDesplegar");
-                break;
-            case 3:
-                AnimacionIng.Play("IngDesplegar");
-                break;
-        }
-    }
-    public void ContraeIdioma()
-    {
-        switch (AnimacionSwitch)
-        {
-            case 1:
-                AnimacionEsp.Play("EspSeleccionado");
-                break;
-            case 2:
-                AnimacionGal.Play("GalSeleccionado");
-                break;
-            case 3:
                 AnimacionIng.Play("IngSeleccionado");
                 break;
         }
@@ -117,12 +95,12 @@ public class GestorOpciones : MonoBehaviour
         AnimacionSwitch = 1;
         if (IdiomaDesplegado)
         {
-            ContraeIdioma();
+            SalidaOpciones();
             IdiomaDesplegado = false;
         } 
         else
         {
-            DespliegaIdioma();
+            EntraOpciones();
             IdiomaDesplegado = true;
         }
     }
@@ -131,12 +109,12 @@ public class GestorOpciones : MonoBehaviour
         AnimacionSwitch = 2;
         if (IdiomaDesplegado)
         {
-            ContraeIdioma();
+            SalidaOpciones();
             IdiomaDesplegado = false;
         }
         else
         {
-            DespliegaIdioma();
+            EntraOpciones();
             IdiomaDesplegado = true;
         }
     }
@@ -146,12 +124,12 @@ public class GestorOpciones : MonoBehaviour
         AnimacionSwitch = 3;
         if (IdiomaDesplegado)
         {
-            ContraeIdioma();
+            SalidaOpciones();
             IdiomaDesplegado = false;
         }
         else
         {
-            DespliegaIdioma();
+            EntraOpciones();
             IdiomaDesplegado = true;
         }
     }   
