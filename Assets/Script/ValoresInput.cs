@@ -9,6 +9,19 @@ public class ValoresInput : MonoBehaviour
     {SceneManager.LoadScene(nombreEscenas);}
     // control cambios de escena, el nombre identifica pero no es la escena usada.
 
+    public void SalirJuego()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else 
+        Application.Quit();
+#endif
+    }
+    //Para salir de editor
+
+   // public void BotonEscape()
+    //{ if Input.GetKeyPressed(KeyCode.Escape)}
+
     [Header("Toggle")]
     public TMP_Text TextoValorToggle;
 
