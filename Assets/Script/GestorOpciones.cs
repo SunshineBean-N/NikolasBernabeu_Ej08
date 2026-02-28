@@ -5,11 +5,8 @@ public class GestorOpciones : MonoBehaviour
     public Animator VideoEntrada;
     public Animator AudioEntrada;
 
-    public Animator AnimacionEsp;
-    public Animator AnimacionGal;
-    public Animator AnimacionIng;
 
-    public bool IdiomaDesplegado = false;
+
 
     public int AnimacionSwitch;
     //Apunta al "numero" de el menu
@@ -27,15 +24,7 @@ public class GestorOpciones : MonoBehaviour
             case 3:
                 AudioEntrada.Play("EntraAudio");
                 break;
-            case 4:
-                AnimacionEsp.Play("EspDesplegar");
-                break;
-            case 5:
-                AnimacionGal.Play("GalDesplegar");
-                break;
-            case 6:
-                AnimacionIng.Play("IngDesplegar");
-                break;
+
         }
     }
 
@@ -52,15 +41,7 @@ public class GestorOpciones : MonoBehaviour
             case 3:
                 AudioEntrada.Play("SaleAudio");
                 break;
-            case 4:
-                AnimacionEsp.Play("EspSeleccionado");
-                break;
-            case 5:
-                AnimacionGal.Play("GalSeleccionado");
-                break;
-            case 6:
-                AnimacionIng.Play("IngSeleccionado");
-                break;
+
         }
     }
 
@@ -84,53 +65,4 @@ public class GestorOpciones : MonoBehaviour
         EntraOpciones();
     }
 
-
-    // Al hacer los public void como lo anterior las animaciones no intereactuaban entre asi como deverian, porque no podian saber en que estado estan
-    // Cree una bool para poder indicar a los botones si estan desplegados o no,
-    // el if comprueba si la bool es true, al ser false pasa directamente al else y reproduce su animacion de desplegarse(Entrada),
-    // al ser ahora true reproducira Seleccionado(Salida) (Se llama seleccionado porwur solo es esa bandera)
-
-    public void EspAnimacion()
-    {
-        AnimacionSwitch = 1;
-        if (IdiomaDesplegado)
-        {
-            SalidaOpciones();
-            IdiomaDesplegado = false;
-        } 
-        else
-        {
-            EntraOpciones();
-            IdiomaDesplegado = true;
-        }
-    }
-    public void GalAnimacion()
-    {
-        AnimacionSwitch = 2;
-        if (IdiomaDesplegado)
-        {
-            SalidaOpciones();
-            IdiomaDesplegado = false;
-        }
-        else
-        {
-            EntraOpciones();
-            IdiomaDesplegado = true;
-        }
-    }
-
-    public void IngAnimacion()
-    {
-        AnimacionSwitch = 3;
-        if (IdiomaDesplegado)
-        {
-            SalidaOpciones();
-            IdiomaDesplegado = false;
-        }
-        else
-        {
-            EntraOpciones();
-            IdiomaDesplegado = true;
-        }
-    }   
 }

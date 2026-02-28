@@ -12,4 +12,8 @@ public class Paneles : MonoBehaviour
     public void ClosePanel() { panel.SetActive(false); }
 
     //Necesito un Open y un Close para indicar a los distintos paneles si estan en true o false, para que se pueda indicar si se desactiva o activa
+
+
+
+    //SI BOORO ESTO SALEN ERRORES
 }

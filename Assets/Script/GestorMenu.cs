@@ -53,7 +53,7 @@ public class JestorMenu : MonoBehaviour
                 break;
         }
     }
-
+    // Records corresponde a "mis datos"
     //llamar con el onclick, asignar AnimationSwitch el valor uno e indicar que estoy en el metodo "EntraLogros"
     public void LogrosAnimacion()
     {
