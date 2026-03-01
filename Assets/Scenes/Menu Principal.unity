@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 8743534}
   - component: {fileID: 8743533}
   - component: {fileID: 8743532}
+  - component: {fileID: 8743535}
   m_Layer: 0
   m_Name: GestorMenu
   m_TagString: Untagged
@@ -199,6 +200,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8743535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90932d27b1f77d141af2323e4a9a06af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardarDatos
+  NombreJugador: {fileID: 1601248680}
+  Nombre: {fileID: 823591214}
+  Apellidos: {fileID: 1637699073}
+  Correo: {fileID: 1765458637}
+  Edad: {fileID: 1805893535}
+  Dificultad: 0
+  Idiomas: 0
+  Mute: 0
+  VolumenGeneral: 0
+  Musica: 0
+  FX: 0
+  Dialogo: 0
+  Brillo: 0
+  Contraste: 0
+  Resolucion: 0
 --- !u!1 &45710765
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +811,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Jugar
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8743535}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: Guardar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &154588186
@@ -3923,6 +3963,18 @@ MonoBehaviour:
           m_StringArgument: Opciones
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8743535}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: Guardar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &825816419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4309,6 +4361,18 @@ MonoBehaviour:
           m_StringArgument: Video
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8743535}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: Guardar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &902728714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4735,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 576812779}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8743533}
         m_TargetAssemblyTypeName: JestorMenu, Assembly-CSharp
         m_MethodName: SalirAnimacion
@@ -4683,9 +4759,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 576812779}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 8743535}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: Guardar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5012,8 +5088,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1616444375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
