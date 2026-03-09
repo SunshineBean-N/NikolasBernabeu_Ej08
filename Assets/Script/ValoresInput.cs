@@ -73,7 +73,7 @@ public class ValoresInput : MonoBehaviour
     public Slider miSlider5;
     public TMP_Text textoValorSlider5;
 
-    public void LeerValorSlider()
+    public void LeerValorVolumenGeneral()
     { float valor = miSlider.value;
     textoValorSlider.text = valor.ToString();}
 
