@@ -153,39 +153,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &77646583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
---- !u!114 &77646584 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2410412135784408235, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
---- !u!114 &77646585 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4596992730970888339, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
 --- !u!1 &97177170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8669948071332311154, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -655,6 +622,39 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &931150444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+  m_PrefabInstance: {fileID: 1973056772575742228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
+--- !u!114 &931150445 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2410412135784408235, guid: b177d363817846544856ce20f39c3f40, type: 3}
+  m_PrefabInstance: {fileID: 1973056772575742228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
+--- !u!114 &931150446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4596992730970888339, guid: b177d363817846544856ce20f39c3f40, type: 3}
+  m_PrefabInstance: {fileID: 1973056772575742228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
 --- !u!1 &988997512
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +835,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4353362388835144170, guid: b177d363817846544856ce20f39c3f40, type: 3}
   m_PrefabInstance: {fileID: 1973056772575742228}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1593464599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2124259903234413266, guid: b177d363817846544856ce20f39c3f40, type: 3}
+  m_PrefabInstance: {fileID: 1973056772575742228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
 --- !u!1 &1807924345 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8513704686867612838, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -850,8 +861,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1860653251}
   - component: {fileID: 1860653250}
-  - component: {fileID: 1860653252}
   - component: {fileID: 1860653253}
+  - component: {fileID: 1860653254}
   m_Layer: 0
   m_Name: GestorOpciones
   m_TagString: Untagged
@@ -890,33 +901,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1860653252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860653249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90932d27b1f77d141af2323e4a9a06af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuardarDatos
-  NombreJugador: {fileID: 0}
-  Nombre: {fileID: 0}
-  Apellidos: {fileID: 0}
-  Correo: {fileID: 0}
-  Edad: {fileID: 0}
-  Dificultad: {fileID: 77646585}
-  Idiomas: {fileID: 77646584}
-  Mute: {fileID: 77646583}
-  VolumenGeneral: {fileID: 123990982800462995}
-  Musica: {fileID: 6288623613348918061}
-  FX: {fileID: 6331897257420329127}
-  Dialogo: {fileID: 69191543308130057}
-  Brillo: {fileID: 5482895360987145125}
-  Contraste: {fileID: 1892469731449435084}
-  Resolucion: {fileID: 0}
 --- !u!114 &1860653253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,6 +930,28 @@ MonoBehaviour:
   textoValorSlider5: {fileID: 4373593332166092384}
   miDropdown: {fileID: 0}
   textoValorDropdown: {fileID: 0}
+--- !u!114 &1860653254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860653249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6795764d7ecf44ba7deb3a7469b141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardarOpciones
+  Dificultad: {fileID: 931150446}
+  Idiomas: {fileID: 931150445}
+  Mute: {fileID: 931150444}
+  VolumenGeneral: {fileID: 123990982800462995}
+  Musica: {fileID: 6288623613348918061}
+  FX: {fileID: 6331897257420329127}
+  Dialogo: {fileID: 69191543308130057}
+  Brillo: {fileID: 5482895360987145125}
+  Contraste: {fileID: 1892469731449435084}
+  Resolucion: {fileID: 1593464599}
 --- !u!1 &2033781832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,14 +1408,14 @@ PrefabInstance:
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1860653252}
+      objectReference: {fileID: 1860653254}
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CambioEscena
       objectReference: {fileID: 0}
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: GuardarOpciones
+      value: OpcionesGuardar
       objectReference: {fileID: 0}
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1417,7 +1423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GuardarDatos, Assembly-CSharp
+      value: GuardarOpciones, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2902675432073901683, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
