@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class JestorMenu : MonoBehaviour
@@ -10,6 +11,52 @@ public class JestorMenu : MonoBehaviour
 
     public int AnimacionSwitch;
     //Apunta al "numero" de el menu
+
+    [Header("principales")]
+    public TextMeshProUGUI botonNombreText;
+    public TextMeshProUGUI botonJuegoText;
+    public TextMeshProUGUI botonOpcionesText;
+    public TextMeshProUGUI botonSalirText;
+
+    [Header("Secundarios")]
+    public TextMeshProUGUI botonSeguroText;
+    public TextMeshProUGUI botonSiText;
+    public TextMeshProUGUI botonNoText;
+
+    public TextMeshProUGUI botonCreditosText;
+
+    public TextMeshProUGUI botonLogrosText;
+
+    public TextMeshProUGUI botonDatosText;
+    public TextMeshProUGUI botonNombreDatosText;
+    public TextMeshProUGUI botonApellidoDatosText;
+    public TextMeshProUGUI botonCorreoDatosText;
+    public TextMeshProUGUI botonEdadDatosText;
+
+
+    private string[,] matrizIdiomas = new string[3, 14]
+    {
+        { "Introduce tu nombre", "Jugar", "Opciones", "Salir", "¿Seguro?", "Sí", "No", "Créditos", "Logros", "Tus datos", "Nombre", "Apellido", "Correo", "Edad" },
+        { "Introduce o teu nome", "Xogar", "Opcións", "Saír", "Seguro?", "Si", "Non", "Créditos", "Logros", "Os teus datos", "Nome", "Apelidos", "Correo electrónico", "Idade" },
+        { "Enter your nametag", "Play", "Options", "Exit", "Sure?", "Yes", "No", "Credits", "Achievements", "Your details", "First name", "Last name", "Email", "Age" },
+    };
+    //cambiar todo esto para opciones
+    //crear matriz por escena
+    private int i = 0;
+    //Prueba por error de i no existe
+    void Start()
+    {
+        int i = PlayerPrefs.GetInt("Idioma", 0);
+        ActualizarTextos();  }
+    //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
+
+    public void ActualizarTextos()
+    {
+        botonJuegoText.text = matrizIdiomas[i, 0];
+        botonJuegoText.text = matrizIdiomas[i, 1];
+        botonOpcionesText.text = matrizIdiomas[i, 2];
+        botonSalirText.text = matrizIdiomas[i, 3];
+    }
 
     public void EntraMenus()
     {

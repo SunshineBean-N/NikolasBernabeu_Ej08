@@ -9,6 +9,7 @@ public class GuardarDatos : MonoBehaviour
     void Start()
     {
         CargarTextos();
+        //añadir cargar i de idiomas y agregar matiz de idiomas
     }
     //Necesito que Cargar siempre se ejecute al empezar cada escena
 
