@@ -31,7 +31,7 @@ public class IdiomasTextos : MonoBehaviour
     public TextMeshProUGUI botonFXText;
     public TextMeshProUGUI botonDialogoText;
 
-    private int i = 0;
+    int i;
 
     private string[,] matrizIdiomas = new string[3, 18]
     {
@@ -43,13 +43,16 @@ public class IdiomasTextos : MonoBehaviour
     //crear matriz por escena
     void Start()
     {
-        int i = PlayerPrefs.GetInt("Idioma", 0);
+        i = PlayerPrefs.GetInt("Idioma", 0);
+        Debug.Log(i);
         ActualizarTextos();
     }
     //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
 
     public void ActualizarTextos()
          {
+        PlayerPrefs.SetInt("Idioma", i);
+        PlayerPrefs.Save();
         botonTituloOpcionesText.text = matrizIdiomas[i, 0];
 
         botonJuegoOpcionesText.text = matrizIdiomas[i, 1];
@@ -90,11 +93,5 @@ public class IdiomasTextos : MonoBehaviour
             ActualizarTextos();
         }
 
-    public void MenuToggle(int index)
-    {
-        PlayerPrefs.SetInt("Idioma", index);
-        PlayerPrefs.Save();
-        ActualizarTextos();
-        //guardar playerprefs despues de esto
-    }
+ 
 }

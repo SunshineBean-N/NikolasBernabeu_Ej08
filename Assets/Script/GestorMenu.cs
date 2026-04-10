@@ -42,11 +42,10 @@ public class JestorMenu : MonoBehaviour
     };
     //cambiar todo esto para opciones
     //crear matriz por escena
-    private int i = 0;
-    //Prueba por error de i no existe
+    int i;
     void Start()
     {
-        int i = PlayerPrefs.GetInt("Idioma", 0);
+        i = PlayerPrefs.GetInt("Idioma", 0);
         ActualizarTextos();  }
     //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
 
