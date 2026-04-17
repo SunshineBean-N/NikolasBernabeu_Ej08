@@ -189,16 +189,16 @@ MonoBehaviour:
   botonJuegoText: {fileID: 1611039718}
   botonOpcionesText: {fileID: 1652896041}
   botonSalirText: {fileID: 1305712533}
-  botonSeguroText: {fileID: 0}
-  botonSiText: {fileID: 0}
-  botonNoText: {fileID: 0}
-  botonCreditosText: {fileID: 0}
-  botonLogrosText: {fileID: 0}
-  botonDatosText: {fileID: 0}
-  botonNombreDatosText: {fileID: 0}
-  botonApellidoDatosText: {fileID: 0}
-  botonCorreoDatosText: {fileID: 0}
-  botonEdadDatosText: {fileID: 0}
+  botonSeguroText: {fileID: 783936026}
+  botonSiText: {fileID: 1765179019}
+  botonNoText: {fileID: 962956316}
+  botonCreditosText: {fileID: 613796010}
+  botonLogrosText: {fileID: 1820528322}
+  botonDatosText: {fileID: 2039562291}
+  botonNombreDatosText: {fileID: 1474852003}
+  botonApellidoDatosText: {fileID: 724807197}
+  botonCorreoDatosText: {fileID: 148456031}
+  botonEdadDatosText: {fileID: 2064843103}
 --- !u!4 &8743534
 Transform:
   m_ObjectHideFlags: 0
@@ -6387,7 +6387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -23}
+  m_AnchoredPosition: {x: 0, y: 63}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453793763
@@ -6410,12 +6410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nikolas
-
-
-    Apoyo by:
-
-    Hummus'
+  m_text: "Nikol\xE1s"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e880cbfa3b42887478786a981a5509a4, type: 2}
   m_sharedMaterial: {fileID: -7069234016605978611, guid: e880cbfa3b42887478786a981a5509a4, type: 2}
