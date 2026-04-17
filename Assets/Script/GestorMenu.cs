@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JestorMenu : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class JestorMenu : MonoBehaviour
     public TextMeshProUGUI botonCorreoDatosText;
     public TextMeshProUGUI botonEdadDatosText;
 
+  //  public Sprite[] vida;
+  //  int indiceVida;
+   // public Image imagenVida;
 
     private string[,] matrizIdiomas = new string[3, 14]
     {
@@ -45,6 +49,7 @@ public class JestorMenu : MonoBehaviour
     int i;
     void Start()
     {
+        //indiceVida = 0;
         i = PlayerPrefs.GetInt("Idioma", 0);
         ActualizarTextos();  }
     //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
@@ -57,6 +62,17 @@ public class JestorMenu : MonoBehaviour
         botonSalirText.text = matrizIdiomas[i, 3];
     }
 
+    //public void Vidamas()
+   // {
+  //      indiceVida++;
+   //     imagenVida.sprite = vida[indiceVida];
+   //
+   // }
+  //  public void Vidamenos()
+    //{
+    //    indiceVida--;
+    //    imagenVida.sprite = vida[indiceVida];
+   // }
     public void EntraMenus()
     {
         switch (AnimacionSwitch)
