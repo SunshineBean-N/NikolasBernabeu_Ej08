@@ -4,22 +4,61 @@ using UnityEngine.UI;
 
 public class ControlUIGame : MonoBehaviour
 {
-    public Animator[] vida;
-    int indiceVida;
-    public Image imagenVida;
+    [Header("Energia")]
+    public Sprite[] Energia;
+    int indiceenergia;
+    public Image imagenenergia;
+
+
+    [Header("Vida")]
+    public Animator vida;
+
+    public int AnimacionSwitch;
+
     void Start()
     {
-        indiceVida = 0;
+        indiceenergia = 0;
+        imagenenergia.sprite = Energia[indiceenergia];
+
     }
-    public void Vidamas()
+        public void Energiamas()
+     {
+        indiceenergia++;
+        imagenenergia.sprite = Energia[indiceenergia];
+    
+     }
+      public void Energiamenos()
     {
-        indiceVida++;
-        imagenVida.sprite = vida[indiceVida];
+        indiceenergia--;
+        imagenenergia.sprite = Energia[indiceenergia];
+    }
+
+    public void AnimacionVidas()
+    {
+        switch (AnimacionSwitch)
+        {
+            case 1:
+                vida.Play("Vida1");
+                break;
+            case 2:
+                vida.Play("Vida2");
+                break;
+            case 3:
+                vida.Play("Vida3");
+                break;
+        }
+    }
+
+    public void Vidaamas()
+    {
+        AnimacionSwitch ++;
+        AnimacionVidas();
 
     }
     public void Vidamenos()
     {
-        indiceVida--;
-        imagenVida.sprite = vida[indiceVida];
+        AnimacionSwitch--;
+        AnimacionVidas();
     }
+
 }
