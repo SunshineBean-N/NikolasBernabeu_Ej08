@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,6 +6,15 @@ using UnityEngine.UI;
 
 public class ValoresInput : MonoBehaviour
 {
+    void Start()
+    {
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
+        CambiarBrillo(brilloGuardado);
+
+        float contrasteGuardado = PlayerPrefs.GetFloat("Contraste", 1f);
+        CambiarContraste(contrasteGuardado);
+    }
+
     public void CambioEscena(string nombreEscenas)
     {SceneManager.LoadScene(nombreEscenas);}
     // control cambios de escena, el nombre identifica pero no es la escena usada.
@@ -73,6 +83,10 @@ public class ValoresInput : MonoBehaviour
     public Slider miSlider5;
     public TMP_Text textoValorSlider5;
 
+    [Header("ControldeBrillo")]
+    public Image panelBrillo;
+    public Image panelContraste;
+
     public void LeerValorVolumenGeneral()
     { float valor = miSlider.value;
     textoValorSlider.text = valor.ToString();}
@@ -117,4 +131,18 @@ public class ValoresInput : MonoBehaviour
     public void LeerDropdown()
     { float valor = miDropdown.value;
         textoValorDropdown.text = valor.ToString();}
+
+
+    public void CambiarBrillo(float valor)
+    {
+        Color c = panelBrillo.color;
+        c.a = 1f - valor / 100;
+        panelBrillo.color = c;
+    }
+    public void CambiarContraste(float valor)
+    {
+        Color c = panelContraste.color;
+        c.a = 1f - valor / 100;
+        panelContraste.color = c;
+    }
 }

@@ -19,17 +19,18 @@ public class ControlUIGame : MonoBehaviour
     {
         indiceenergia = 0;
         imagenenergia.sprite = Energia[indiceenergia];
-
     }
         public void Energiamas()
      {
         indiceenergia++;
+        if (indiceenergia > 4) { indiceenergia = 4; }
         imagenenergia.sprite = Energia[indiceenergia];
-    
      }
+
       public void Energiamenos()
     {
         indiceenergia--;
+        if (indiceenergia < 0) { indiceenergia = 0; }
         imagenenergia.sprite = Energia[indiceenergia];
     }
 
@@ -52,12 +53,14 @@ public class ControlUIGame : MonoBehaviour
     public void Vidaamas()
     {
         AnimacionSwitch ++;
+        if (AnimacionSwitch > 3) { AnimacionSwitch = 3; }
         AnimacionVidas();
 
     }
     public void Vidamenos()
     {
         AnimacionSwitch--;
+        if (AnimacionSwitch < 0) { AnimacionSwitch = 0; }
         AnimacionVidas();
     }
 

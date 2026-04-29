@@ -8,6 +8,16 @@ public class GuardarOpciones : MonoBehaviour
     void Start()
     {
         OpcionesCargar();
+
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
+        Brillo.value = brilloGuardado;
+        CambiarBrillo(brilloGuardado);
+        Brillo.onValueChanged.AddListener(CambiarBrillo);
+
+        float contrasteGuardado = PlayerPrefs.GetFloat("Contraste", 1f);
+        Contraste.value = contrasteGuardado;
+        CambiarContraste(contrasteGuardado);
+        Contraste.onValueChanged.AddListener(CambiarContraste);
     }
     //Necesito que Cargar siempre se ejecute al empezar cada escena
 
@@ -29,6 +39,12 @@ public class GuardarOpciones : MonoBehaviour
     [Header("dropdown")]
     public TMP_Dropdown Resolucion;
     //DropDown
+
+    [Header("ControldeBrillo")]
+    public Image panelBrillo;
+    public Image panelContraste;
+    //Usa slider de "Brillo" y "Contraste" ya incliuido en Sliders
+
 
     public void OpcionesGuardar()
     {
@@ -66,5 +82,20 @@ public class GuardarOpciones : MonoBehaviour
         //PlayerPrefs.SetString("Nombre", Nombre.text);
 
         PlayerPrefs.Save();
+    }
+
+    public void CambiarBrillo(float valor)
+    {
+        Color c = panelBrillo.color;
+        c.a = 1f - valor/100;
+        panelBrillo.color = c;
+        PlayerPrefs.SetFloat("Brillo", valor);
+    }
+    public void CambiarContraste(float valor)
+    {
+        Color c = panelContraste.color;
+        c.a = 1f - valor / 100;
+        panelContraste.color = c;
+        PlayerPrefs.SetFloat("Contraste", valor);
     }
 }
