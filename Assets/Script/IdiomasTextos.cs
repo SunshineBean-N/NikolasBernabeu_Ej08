@@ -21,7 +21,6 @@ public class IdiomasTextos : MonoBehaviour
 
     [Header("Video")]
     public TextMeshProUGUI botonBrilloText;
-    public TextMeshProUGUI botonContrasteText;
     public TextMeshProUGUI botonResolucionText;
 
     [Header("Audio")]
@@ -33,18 +32,17 @@ public class IdiomasTextos : MonoBehaviour
 
     int i;
 
-    private string[,] matrizIdiomas = new string[3, 18]
+    private string[,] matrizIdiomas = new string[3, 17]
     {
-        { "Opciones", "Juego", "Vídeo", "Audio", "Salir", "Dificultad", "Fácil", "Medio", "Dificil", "Idioma", "Brillo", "Contraste", "Resolución", "Silenciar", "Volumen general", "Música", "FX", "Diálogos" },
-        { "Opcións", "Xogo", "Vídeo", "Son", "Saír", "Dificultade", "Fácil", "Media", "Difícil", "Idioma", "Brillo", "Contraste", "Resolución", "Silenciar", "Volume xeral", "Música", "Efectos", "Diálogo" },
-        { "Options", "Game", "Options", "Sound", "Exit", "Difficul", "Easy", "Medium", "Hard", "Language", "Brightness", "Contrast", "Resolution", "Mute", "Overall Volume", "Music", "FX", "Dialogue" },
+        { "Opciones", "Juego", "Vídeo", "Audio", "Salir", "Dificultad", "Fácil", "Medio", "Dificil", "Idioma", "Brillo", "Resolución", "Silenciar", "Volumen general", "Música", "FX", "Diálogos" },
+        { "Opcións", "Xogo", "Vídeo", "Son", "Saír", "Dificultade", "Fácil", "Media", "Difícil", "Idioma", "Brillo", "Resolución", "Silenciar", "Volume xeral", "Música", "Efectos", "Diálogo" },
+        { "Options", "Game", "Options", "Sound", "Exit", "Difficul", "Easy", "Medium", "Hard", "Language", "Brightness", "Resolution", "Mute", "Overall Volume", "Music", "FX", "Dialogue" },
     };
     //cambiar todo esto para opciones
     //crear matriz por escena
     void Start()
     {
         i = PlayerPrefs.GetInt("Idioma", 0);
-        Debug.Log(i);
         ActualizarTextos();
     }
     //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
@@ -67,14 +65,13 @@ public class IdiomasTextos : MonoBehaviour
         botonIdiomaText.text = matrizIdiomas[i, 9];
 
         botonBrilloText.text = matrizIdiomas[i, 10];
-        botonContrasteText.text = matrizIdiomas[i, 11];
-        botonResolucionText.text = matrizIdiomas[i, 12];
+        botonResolucionText.text = matrizIdiomas[i, 11];
 
-        botonSilenciarText.text = matrizIdiomas[i, 13];
-        botonVolumenGeneralText.text = matrizIdiomas[i, 14];
-        botonMusicaText.text = matrizIdiomas[i, 15];
-        botonFXText.text = matrizIdiomas[i, 16];
-        botonDialogoText.text = matrizIdiomas[i, 17];
+        botonSilenciarText.text = matrizIdiomas[i, 12];
+        botonVolumenGeneralText.text = matrizIdiomas[i, 13];
+        botonMusicaText.text = matrizIdiomas[i, 14];
+        botonFXText.text = matrizIdiomas[i, 15];
+        botonDialogoText.text = matrizIdiomas[i, 16];
     }
 
         public void Espanol()

@@ -10,9 +10,6 @@ public class ValoresInput : MonoBehaviour
     {
         float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
         CambiarBrillo(brilloGuardado);
-
-        float contrasteGuardado = PlayerPrefs.GetFloat("Contraste", 1f);
-        CambiarContraste(contrasteGuardado);
     }
 
     public void CambioEscena(string nombreEscenas)
@@ -115,11 +112,6 @@ public class ValoresInput : MonoBehaviour
         textoValorSlider4.text = valor.ToString();
     }
 
-    public void LeerValorSliderContraste()
-    {
-        float valor = miSlider5.value;
-        textoValorSlider5.text = valor.ToString();
-    }
 
     //.value es para indicar que es un valor numerico, to string convierte el valor en texto
     // Dupicados para todos los Slider
@@ -138,11 +130,5 @@ public class ValoresInput : MonoBehaviour
         Color c = panelBrillo.color;
         c.a = 1f - valor / 100;
         panelBrillo.color = c;
-    }
-    public void CambiarContraste(float valor)
-    {
-        Color c = panelContraste.color;
-        c.a = 1f - valor / 100;
-        panelContraste.color = c;
     }
 }
