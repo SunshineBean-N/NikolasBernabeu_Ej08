@@ -42,6 +42,7 @@ public class ControlUIGame : MonoBehaviour
         //Convierto el float del slider en int para poder usar su value
     }
 
+    //Gestion de la vida
     public void AnimacionVidas()
     {
         switch (AnimacionSwitch)

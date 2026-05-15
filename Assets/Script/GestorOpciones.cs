@@ -13,7 +13,7 @@ public class GestorOpciones : MonoBehaviour
 
     [Header("Cambio de resolucion")]
     public TMP_Dropdown dropdownResolucion;
- //   public Toggle toggleModoPantalla;
+    public Toggle toggleModoPantalla;
 
     private int r;
     private int[][] resoluciones = new int[][]
@@ -29,9 +29,9 @@ public class GestorOpciones : MonoBehaviour
     private void Start()
     {
         //Carga cambio de pantalla
-   //     modoPantalla = PlayerPrefs.GetInt("Pantalla", 1);
-   //     if (modoPantalla == 1) { toggleModoPantalla.isOn = true; }
-   //     else { toggleModoPantalla.isOn = false; }
+        modoPantalla = PlayerPrefs.GetInt("Pantalla", 1);
+        if (modoPantalla == 1) { toggleModoPantalla.isOn = true; }
+        else { toggleModoPantalla.isOn = false; }
 
         //Carga cambio resolucion
         r = PlayerPrefs.GetInt("Resolucion", 1);
@@ -103,15 +103,15 @@ public class GestorOpciones : MonoBehaviour
         int ancho = resoluciones[indice][0];
         int alto = resoluciones[indice][1];
 
-       // if (toggleModoPantalla.isOn) { modoPantalla = 1; } else { modoPantalla = 0; }
+        if (toggleModoPantalla.isOn) { modoPantalla = 1; } else { modoPantalla = 0; }
 
-       // if (modoPantalla == 1) { toggleModoPantalla.isOn = true; } else { toggleModoPantalla.isOn = false; }
+        if (modoPantalla == 1) { toggleModoPantalla.isOn = true; } else { toggleModoPantalla.isOn = false; }
 
-  //      FullScreenMode modo = toggleModoPantalla.isOn
-  //          ? FullScreenMode.FullScreenWindow
-  //          : FullScreenMode.Windowed;
+        FullScreenMode modo = toggleModoPantalla.isOn
+            ? FullScreenMode.FullScreenWindow
+            : FullScreenMode.Windowed;
 
-        Screen.SetResolution(ancho, alto, true);//modo
+        Screen.SetResolution(ancho, alto, modo);
 
 
         PlayerPrefs.SetInt("Resolucion", indice);
