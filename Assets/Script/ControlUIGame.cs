@@ -19,9 +19,16 @@ public class ControlUIGame : MonoBehaviour
     public Animator vida;
     public int AnimacionSwitch;
     public int nivelVida;
-
     //Aqui está todo lo que manejará la vide y energia
-    
+
+    [Header("Contador")]
+    public int tiempoInicial = 30;
+    public TMP_Text letritasContador;
+
+    [Header("Inventario")]
+    public Animator InventarioEntrada;
+
+
     void Start()
 
     {
@@ -32,8 +39,16 @@ public class ControlUIGame : MonoBehaviour
         AnimacionVidas();
         CambioEnergia();
     }
-        
-        public void CambioEnergia()
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            InventarioAnimacion();
+        }
+    }
+
+    public void CambioEnergia()
     {
         indiceenergia = Convert.ToInt32(sliderEnergia.value);
         imagenenergia.sprite = Energia[indiceenergia];
@@ -75,4 +90,57 @@ public class ControlUIGame : MonoBehaviour
         PlayerPrefs.SetInt("Vida", AnimacionSwitch);
         PlayerPrefs.Save();
     }
+
+    // CRONOMETRO
+    public void BotonContador()
+    {
+        StartCoroutine(ContadorRegresivo(tiempoInicial));
+    }
+    IEnumerator ContadorRegresivo(int segundos)
+    {
+        int tiempoRestante = segundos;
+
+        while (tiempoRestante > 0)
+        {
+            letritasContador.text = tiempoRestante.ToString();
+            yield return new WaitForSeconds(1);
+            tiempoRestante--;
+
+            if (tiempoRestante <= 10)
+            {
+                letritasContador.color = Color.red;
+
+                //sonidoTermina.play();
+                Debug.Log("TERMINA");
+
+            }
+        }
+    }
+
+    public void SalidaInventario()
+    {
+        switch (AnimacionSwitch)
+        {
+            case 1:
+                InventarioEntrada.Play("InventarioSale");
+                break;
+        }
+    }
+    public void EntraInventario()
+    {
+        switch (AnimacionSwitch)
+        {
+            case 1:
+                InventarioEntrada.Play("InventarioEntra");
+                break;
+        }
+    }
+
+    public void InventarioAnimacion()
+    {
+        SalidaInventario();
+        AnimacionSwitch = 1;
+        EntraInventario();
+    }
+
 }

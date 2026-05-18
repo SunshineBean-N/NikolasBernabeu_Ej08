@@ -5,15 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class GuardarOpciones : MonoBehaviour
 {
-    void Start()
-    {
-        OpcionesCargar();
 
-        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
-        Brillo.value = brilloGuardado;
-        CambiarBrillo(brilloGuardado);
-        Brillo.onValueChanged.AddListener(CambiarBrillo);
-    }
     //Necesito que Cargar siempre se ejecute al empezar cada escena
 
     [Header("toggle")]
@@ -37,6 +29,15 @@ public class GuardarOpciones : MonoBehaviour
 
     [Header("ControldeBrillo")]
     public Image panelBrillo;
+    void Start()
+    {
+        OpcionesCargar();
+
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
+        Brillo.value = brilloGuardado;
+        CambiarBrillo(brilloGuardado);
+        Brillo.onValueChanged.AddListener(CambiarBrillo);
+    }
 
     public void OpcionesGuardar()
     {
