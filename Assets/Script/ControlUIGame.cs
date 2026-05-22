@@ -28,6 +28,11 @@ public class ControlUIGame : MonoBehaviour
     [Header("Inventario")]
     public Animator InventarioEntrada;
 
+    [Header("Puntuacion y Cerebro")]
+    public TMP_Text Puntuacion;
+    public int SumaPuntuacion;
+    public Transform Cerebro;
+
 
     void Start()
 
@@ -141,6 +146,12 @@ public class ControlUIGame : MonoBehaviour
         SalidaInventario();
         AnimacionSwitch = 1;
         EntraInventario();
+    }
+
+    public void ClickCerebro()
+    {
+        SumaPuntuacion = SumaPuntuacion + 1;
+        Puntuacion.text = "x " + SumaPuntuacion.ToString();
     }
 
 }
