@@ -28,17 +28,23 @@ public class ControlUIGame : MonoBehaviour
     [Header("Inventario")]
     public Animator InventarioEntrada;
 
-    [Header("Puntuacion y Cerebro")]
+    [Header("Puntuacion y objetos")]
     public TMP_Text Puntuacion;
+    public TMP_Text Objetos;
     public int SumaPuntuacion;
-    public Transform Cerebro;
+    public int SumaOnjetos;
 
+
+    [Header("Informacion")]
+    public Animator InformacionEntrada;
 
     void Start()
 
     {
         AnimacionSwitch = PlayerPrefs.GetInt("Vida", 3);
         indiceenergia = PlayerPrefs.GetInt("Energia", 4);
+        SumaPuntuacion = PlayerPrefs.GetInt("PuntuacionSave", 0);
+        Puntuacion.text = SumaPuntuacion.ToString();
         sliderEnergia.value = indiceenergia;
 
         AnimacionVidas();
@@ -50,6 +56,10 @@ public class ControlUIGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             InventarioAnimacion();
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            InfoAnimacion();
         }
     }
 
@@ -78,6 +88,33 @@ public class ControlUIGame : MonoBehaviour
                 break;
         }
     }
+
+    //INFORMACION
+    public void SalidaInfo()
+    {
+        switch (AnimacionSwitch)
+        {
+            case 1:
+                InformacionEntrada.Play("SaleInfo");
+                break;
+        }
+    }
+    public void EntraInfo()
+    {
+        switch (AnimacionSwitch)
+        {
+            case 1:
+                InformacionEntrada.Play("EntraInfo");
+                break;
+        }
+    }
+    public void InfoAnimacion()
+    {
+        SalidaInfo();
+        AnimacionSwitch = 1;
+        EntraInfo();
+    }
+
 
     public void Vidaamas()
     {
@@ -114,9 +151,15 @@ public class ControlUIGame : MonoBehaviour
             if (tiempoRestante <= 10)
             {
                 letritasContador.color = Color.red;
+                Debug.Log("casi casi");
+
+            }
+            if (tiempoRestante <= 0)
+            {
+                letritasContador.color = Color.red;
 
                 //sonidoTermina.play();
-                Debug.Log("TERMINA");
+                Debug.Log("Termina");
 
             }
         }
@@ -148,10 +191,24 @@ public class ControlUIGame : MonoBehaviour
         EntraInventario();
     }
 
-    public void ClickCerebro()
+    public void ClickObjeto()
     {
-        SumaPuntuacion = SumaPuntuacion + 1;
-        Puntuacion.text = "x " + SumaPuntuacion.ToString();
+        SumaOnjetos = SumaOnjetos + 1;
+        Objetos.text = "x " + SumaOnjetos.ToString();
+
+        if (SumaOnjetos >= 5)
+        {
+            SumaPuntuacion = SumaPuntuacion + 1;
+            SumaOnjetos = 0;
+
+            Puntuacion.text =  SumaPuntuacion.ToString();
+            PlayerPrefs.SetInt("PuntuacionSave", SumaPuntuacion);
+            PlayerPrefs.Save();
+        }
+        if (SumaPuntuacion < 100)
+        {
+            //insertar animacion
+        }
     }
 
 }

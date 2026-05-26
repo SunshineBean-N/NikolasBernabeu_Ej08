@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 public class GuardarOpciones : MonoBehaviour
 {
 
@@ -20,8 +21,12 @@ public class GuardarOpciones : MonoBehaviour
     public Slider FX;
     public Slider Dialogo;
     public Slider Brillo;
-    public Slider Contraste;
     //Solo Sliders
+
+    [Header("Mixers")]
+    public AudioMixer MixerFX;
+    public AudioMixer MixerMusica;
+    public AudioMixer MixerDialogos;
 
     [Header("dropdown")]
     public TMP_Dropdown Resolucion;
@@ -51,11 +56,6 @@ public class GuardarOpciones : MonoBehaviour
     }
     public void OpcionesCargar()
     {
-        //Toggles
-        //PlayerPrefs.SetString("Volumen", VolumenGeneral.value);
-        //PlayerPrefs.SetString("Nombre", Nombre.text);
-        //int silencio = PlayerPrefs.GetInt("Silenciar");
-
         //Sliders
         float master = PlayerPrefs.GetFloat("Volumen", 1);
         VolumenGeneral.value = master;
@@ -67,11 +67,6 @@ public class GuardarOpciones : MonoBehaviour
         Dialogo.value = voces;
         float brill = PlayerPrefs.GetFloat("Brillo1", 1);
         Brillo.value = brill;
-       // float contr = PlayerPrefs.GetFloat("Contraste1", 1);
-      //  Contraste.value = contr;
-
-        //Dropdowns
-        //PlayerPrefs.SetString("Nombre", Nombre.text);
 
         PlayerPrefs.Save();
     }
@@ -82,5 +77,50 @@ public class GuardarOpciones : MonoBehaviour
         c.a = 1f - valor/100;
         panelBrillo.color = c;
         PlayerPrefs.SetFloat("Brillo", valor);
+    }
+
+    public void ToggleSilenciar()
+    {
+        if (Mute == false)
+        {
+            Musica.interactable = !Musica.interactable;
+            FX.interactable = !FX.interactable;
+            Dialogo.interactable = !Dialogo.interactable;
+            CambioFX(0.0001f);
+            CambioDialogos(0.0001f);
+            CambioMusica(0.0001f);
+        }
+        else
+        {
+            Musica.interactable = !Musica.interactable;
+            FX.interactable = !FX.interactable;
+            Dialogo.interactable = !Dialogo.interactable;
+        }
+    }
+
+    public void CambioFX(float volume)
+    {
+        if (volume < 0.0001f) volume = 0.0001f;
+        float dB = Mathf.Log10(volume / 10) * 20f;
+        MixerFX.SetFloat("FX Mixer", dB);
+        PlayerPrefs.SetFloat("FXSave", volume);
+        PlayerPrefs.Save();
+    }
+    public void CambioMusica(float volume)
+    {
+        if (volume < 0.0001f) volume = 0.0001f;
+        float dB = Mathf.Log10(volume / 10) * 20f;
+        MixerMusica.SetFloat("Musica Mixer", dB);
+        PlayerPrefs.SetFloat("MusicaSave", volume);
+        PlayerPrefs.Save();
+
+    }
+    public void CambioDialogos(float volume)
+    {
+        if (volume < 0.0001f) volume = 0.0001f;
+        float dB = Mathf.Log10(volume / 10) * 20f;
+        MixerDialogos.SetFloat("Dialogo Mixer", dB);
+        PlayerPrefs.SetFloat("DialogosSave", volume);
+        PlayerPrefs.Save();
     }
 }
