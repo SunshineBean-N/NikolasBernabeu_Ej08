@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8743534}
   - component: {fileID: 8743533}
-  - component: {fileID: 8743532}
   - component: {fileID: 8743535}
   m_Layer: 0
   m_Name: GestorMenu
@@ -138,37 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8743532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8743531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61664d25f476ebd468ab5d70e2dad517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ValoresInput
-  TextoValorToggle: {fileID: 0}
-  IdentificadorTexto: {fileID: 0}
-  textoEscrito: {fileID: 0}
-  miSlider: {fileID: 0}
-  textoValorSlider: {fileID: 0}
-  miSlider1: {fileID: 0}
-  textoValorSlider1: {fileID: 0}
-  miSlider2: {fileID: 0}
-  textoValorSlider2: {fileID: 0}
-  miSlider3: {fileID: 0}
-  textoValorSlider3: {fileID: 0}
-  miSlider4: {fileID: 0}
-  textoValorSlider4: {fileID: 0}
-  miSlider5: {fileID: 0}
-  textoValorSlider5: {fileID: 0}
-  panelBrillo: {fileID: 591891600}
-  panelContraste: {fileID: 0}
-  miDropdown: {fileID: 0}
-  textoValorDropdown: {fileID: 0}
 --- !u!114 &8743533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +169,7 @@ MonoBehaviour:
   botonApellidoDatosText: {fileID: 724807197}
   botonCorreoDatosText: {fileID: 148456031}
   botonEdadDatosText: {fileID: 2064843103}
+  panelBrillo: {fileID: 591891600}
 --- !u!4 &8743534
 Transform:
   m_ObjectHideFlags: 0
@@ -589,8 +558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
-        m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
+      - m_Target: {fileID: 8743533}
+        m_TargetAssemblyTypeName: JestorMenu, Assembly-CSharp
         m_MethodName: SalirJuego
         m_Mode: 1
         m_Arguments:
@@ -889,8 +858,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
-        m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
+      - m_Target: {fileID: 8743533}
+        m_TargetAssemblyTypeName: JestorMenu, Assembly-CSharp
         m_MethodName: CambioEscena
         m_Mode: 5
         m_Arguments:
@@ -4089,7 +4058,7 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
         m_MethodName: LeerField
         m_Mode: 1
@@ -4331,8 +4300,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
-        m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
+      - m_Target: {fileID: 8743533}
+        m_TargetAssemblyTypeName: JestorMenu, Assembly-CSharp
         m_MethodName: CambioEscena
         m_Mode: 5
         m_Arguments:
@@ -4747,8 +4716,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
-        m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
+      - m_Target: {fileID: 8743533}
+        m_TargetAssemblyTypeName: JestorMenu, Assembly-CSharp
         m_MethodName: CambioEscena
         m_Mode: 5
         m_Arguments:
@@ -7157,7 +7126,7 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
         m_MethodName: LeerField
         m_Mode: 1
@@ -7723,7 +7692,7 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
         m_MethodName: LeerField
         m_Mode: 1
@@ -8262,7 +8231,7 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
         m_MethodName: LeerField
         m_Mode: 1
@@ -8452,7 +8421,7 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8743532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ValoresInput, Assembly-CSharp
         m_MethodName: LeerField
         m_Mode: 1

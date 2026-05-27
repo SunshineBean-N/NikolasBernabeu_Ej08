@@ -386,17 +386,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &479137210 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 780209797604379921, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &479137211 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1894733585952262874, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -411,17 +400,6 @@ MonoBehaviour:
 --- !u!114 &479137212 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3919487624361742969, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!114 &479137213 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 879561704697544284, guid: b177d363817846544856ce20f39c3f40, type: 3}
   m_PrefabInstance: {fileID: 1973056772575742228}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1066,24 +1044,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ValoresInput
   TextoValorToggle: {fileID: 5483004001595868991}
-  IdentificadorTexto: {fileID: 0}
-  textoEscrito: {fileID: 0}
-  miSlider: {fileID: 123990982800462995}
-  textoValorSlider: {fileID: 9140185342531380025}
   miSlider1: {fileID: 6288623613348918061}
   textoValorSlider1: {fileID: 1294696846581726823}
   miSlider2: {fileID: 6331897257420329127}
   textoValorSlider2: {fileID: 5429196125956085537}
-  miSlider3: {fileID: 69191543308130057}
-  textoValorSlider3: {fileID: 7395199012843566386}
   miSlider4: {fileID: 5482895360987145125}
   textoValorSlider4: {fileID: 5324008334662109530}
-  miSlider5: {fileID: 0}
-  textoValorSlider5: {fileID: 0}
   panelBrillo: {fileID: 1170397679}
-  panelContraste: {fileID: 0}
-  miDropdown: {fileID: 0}
-  textoValorDropdown: {fileID: 0}
 --- !u!114 &1860653254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,14 +1066,11 @@ MonoBehaviour:
   Dificultad: {fileID: 931150446}
   Idiomas: {fileID: 931150445}
   Mute: {fileID: 931150444}
-  VolumenGeneral: {fileID: 123990982800462995}
   Musica: {fileID: 6288623613348918061}
   FX: {fileID: 6331897257420329127}
-  Dialogo: {fileID: 69191543308130057}
   Brillo: {fileID: 5482895360987145125}
   MixerFX: {fileID: 24100000, guid: 57eb79ef87c50154e8bf9e557d4d3a7b, type: 2}
   MixerMusica: {fileID: 24100000, guid: 0a302c9c341acc345b3c545de3894a23, type: 2}
-  MixerDialogos: {fileID: 24100000, guid: 0958876cf2db4a14a842cb4a02dd4b35, type: 2}
   Resolucion: {fileID: 390628630}
   panelBrillo: {fileID: 1170397679}
 --- !u!114 &1860653255
@@ -1134,10 +1098,8 @@ MonoBehaviour:
   botonBrilloText: {fileID: 479137217}
   botonResolucionText: {fileID: 1704212549}
   botonSilenciarText: {fileID: 479137214}
-  botonVolumenGeneralText: {fileID: 479137213}
   botonMusicaText: {fileID: 479137212}
   botonFXText: {fileID: 479137211}
-  botonDialogoText: {fileID: 479137210}
 --- !u!1 &2033781832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,28 +1179,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &69191543308130057 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2940618441059442136, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
---- !u!114 &123990982800462995 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1428129335753227348, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!224 &390028993298253264 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1739161904846537328, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -1488,20 +1428,36 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1860653253}
     - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1860653253}
+      objectReference: {fileID: 1860653254}
     - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LeerValorSliderMusica
       objectReference: {fileID: 0}
     - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CambioMusica
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ValoresInput, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GuardarOpciones, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060387012349331825, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2124259903234413266, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_Value
@@ -2004,8 +1960,48 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1860653254}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1860653254}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CambioMusica
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CambioFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuardarOpciones, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GuardarOpciones, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779201496846275278, guid: b177d363817846544856ce20f39c3f40, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4857931412500428813, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2101,7 +2097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5296787788489967152, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: -159
       objectReference: {fileID: 0}
     - target: {fileID: 5366913226431478974, guid: b177d363817846544856ce20f39c3f40, type: 3}
       propertyPath: m_Name
@@ -2471,6 +2467,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 4353362388835144170, guid: b177d363817846544856ce20f39c3f40, type: 3}
     - {fileID: 1587785453564367886, guid: b177d363817846544856ce20f39c3f40, type: 3}
+    - {fileID: 6788812680643507046, guid: b177d363817846544856ce20f39c3f40, type: 3}
+    - {fileID: 5226325540019967226, guid: b177d363817846544856ce20f39c3f40, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2587297657700316233, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -2893,17 +2891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
---- !u!114 &7395199012843566386 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5217479157667624195, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &9079032429532617071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2587297657700316233, guid: b177d363817846544856ce20f39c3f40, type: 3}
@@ -2938,17 +2925,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &9140185342531380025 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2938167202840934195, guid: b177d363817846544856ce20f39c3f40, type: 3}
-  m_PrefabInstance: {fileID: 1973056772575742228}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

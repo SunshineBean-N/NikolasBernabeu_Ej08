@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class ControlUIGame : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class ControlUIGame : MonoBehaviour
 
     [Header("Puntuacion y objetos")]
     public TMP_Text Puntuacion;
+    public TMP_Text PuntuacionFinal;
     public TMP_Text Objetos;
     public int SumaPuntuacion;
     public int SumaOnjetos;
@@ -37,6 +39,12 @@ public class ControlUIGame : MonoBehaviour
 
     [Header("Informacion")]
     public Animator InformacionEntrada;
+
+    [Header("Final")]
+    public Animator TerminaContador;
+
+    [Header("ControldeBrillo")]
+    public Image panelBrillo;
 
     void Start()
 
@@ -47,10 +55,22 @@ public class ControlUIGame : MonoBehaviour
         Puntuacion.text = SumaPuntuacion.ToString();
         sliderEnergia.value = indiceenergia;
 
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
+        CambiarBrillo(brilloGuardado);
+
         AnimacionVidas();
         CambioEnergia();
     }
 
+    public void CambioEscena(string nombreEscenas)
+    { SceneManager.LoadScene(nombreEscenas); }
+    // control cambios de escena, el nombre identifica pero no es la escena usada.
+    public void CambiarBrillo(float valor)
+    {
+        Color c = panelBrillo.color;
+        c.a = 1f - valor / 100;
+        panelBrillo.color = c;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -156,9 +176,9 @@ public class ControlUIGame : MonoBehaviour
             }
             if (tiempoRestante <= 0)
             {
-                letritasContador.color = Color.red;
-
-                //sonidoTermina.play();
+                letritasContador.text = tiempoRestante.ToString();
+                //  TerminaContador.Play("TerminaEntra");
+                TerminaContador.Play("Final");
                 Debug.Log("Termina");
 
             }
@@ -202,6 +222,7 @@ public class ControlUIGame : MonoBehaviour
             SumaOnjetos = 0;
 
             Puntuacion.text =  SumaPuntuacion.ToString();
+            PuntuacionFinal.text = SumaPuntuacion.ToString();
             PlayerPrefs.SetInt("PuntuacionSave", SumaPuntuacion);
             PlayerPrefs.Save();
         }

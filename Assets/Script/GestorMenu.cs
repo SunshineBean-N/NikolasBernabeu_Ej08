@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class JestorMenu : MonoBehaviour
@@ -34,6 +35,9 @@ public class JestorMenu : MonoBehaviour
     public TextMeshProUGUI botonCorreoDatosText;
     public TextMeshProUGUI botonEdadDatosText;
 
+    [Header("ControldeBrillo")]
+    public Image panelBrillo;
+
 
     private string[,] matrizIdiomas = new string[3, 14]
     {
@@ -46,10 +50,33 @@ public class JestorMenu : MonoBehaviour
     int i;
     void Start()
     {
+        float brilloGuardado = PlayerPrefs.GetFloat("Brillo", 1f);
+        CambiarBrillo(brilloGuardado);
+
         i = PlayerPrefs.GetInt("Idioma", 0);
         ActualizarTextos();  }
     //Llamo a i con playerprefs para cambiar su estado, por defecto está en 0 y si cambia varia
 
+    public void CambioEscena(string nombreEscenas)
+    { SceneManager.LoadScene(nombreEscenas); }
+    // control cambios de escena, el nombre identifica pero no es la escena usada
+
+    public void SalirJuego()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else 
+        Application.Quit();
+#endif
+    }
+    //Para salir de editor
+
+    public void CambiarBrillo(float valor)
+    {
+        Color c = panelBrillo.color;
+        c.a = 1f - valor / 100;
+        panelBrillo.color = c;
+    }
     public void ActualizarTextos()
     {
         botonJuegoText.text = matrizIdiomas[i, 0];

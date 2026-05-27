@@ -25,18 +25,16 @@ public class IdiomasTextos : MonoBehaviour
 
     [Header("Audio")]
     public TextMeshProUGUI botonSilenciarText;
-    public TextMeshProUGUI botonVolumenGeneralText;
     public TextMeshProUGUI botonMusicaText;
     public TextMeshProUGUI botonFXText;
-    public TextMeshProUGUI botonDialogoText;
 
     int i;
 
-    private string[,] matrizIdiomas = new string[3, 17]
+    private string[,] matrizIdiomas = new string[3, 15]
     {
-        { "Opciones", "Juego", "Vídeo", "Audio", "Salir", "Dificultad", "Fácil", "Medio", "Dificil", "Idioma", "Brillo", "Resolución", "Silenciar", "Volumen general", "Música", "FX", "Diálogos" },
-        { "Opcións", "Xogo", "Vídeo", "Son", "Saír", "Dificultade", "Fácil", "Media", "Difícil", "Idioma", "Brillo", "Resolución", "Silenciar", "Volume xeral", "Música", "Efectos", "Diálogo" },
-        { "Options", "Game", "Options", "Sound", "Exit", "Difficul", "Easy", "Medium", "Hard", "Language", "Brightness", "Resolution", "Mute", "Overall Volume", "Music", "FX", "Dialogue" },
+        { "Opciones", "Juego", "Vídeo", "Audio", "Salir", "Dificultad", "Fácil", "Medio", "Dificil", "Idioma", "Brillo", "Resolución", "Silenciar", "Música", "FX"},
+        { "Opcións", "Xogo", "Vídeo", "Son", "Saír", "Dificultade", "Fácil", "Media", "Difícil", "Idioma", "Brillo", "Resolución", "Silenciar", "Música", "Efectos" },
+        { "Options", "Game", "Options", "Sound", "Exit", "Difficul", "Easy", "Medium", "Hard", "Language", "Brightness", "Resolution", "Mute", "Music", "FX"},
     };
     //cambiar todo esto para opciones
     //crear matriz por escena
@@ -68,10 +66,8 @@ public class IdiomasTextos : MonoBehaviour
         botonResolucionText.text = matrizIdiomas[i, 11];
 
         botonSilenciarText.text = matrizIdiomas[i, 12];
-        botonVolumenGeneralText.text = matrizIdiomas[i, 13];
-        botonMusicaText.text = matrizIdiomas[i, 14];
-        botonFXText.text = matrizIdiomas[i, 15];
-        botonDialogoText.text = matrizIdiomas[i, 16];
+        botonMusicaText.text = matrizIdiomas[i, 13];
+        botonFXText.text = matrizIdiomas[i, 14];
     }
 
         public void Espanol()
